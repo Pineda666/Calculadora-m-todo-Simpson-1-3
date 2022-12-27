@@ -19,20 +19,42 @@
 
     <div class="container">
         <h1>Método Simpson 1/3 compuesto</h1>
-        <br><br>
-        <input placeholder='digite límite inferior "a"' type="text" class="form-control" id="a">
-        <input placeholder='digite límite superior "b"' type="text" class="form-control" id="b">
-        <input placeholder='digite numero de subintervalos "N"' type="text" class="form-control" id="n">
-        <br><br>
+        <div class="dat">
+            <div class="datos1">
+            <input placeholder='Ingrese el límite inferior "a"' type="text" class="form-control" id="a">
+            <input placeholder='Ingrese el límite superior "b"' type="text" class="form-control" id="b">
+            <input placeholder='Ingrese el número de subintervalos "N"' type="text" class="form-control" id="n">
+        </div>
+        <div class="datos2">
+                <h6>Instrucciones:</h6>
+                <p>
+                    <ul>
+                        <li>raíz cuadrada: sq()</li>
+                        <li>exponente: ^(x,2)</li>
+                        <li>logaritmo: log()</li>
+                        <li>coseno: cos()</li>
+                        <li>seno: sen()</li>
+                        <li>arco coseno: acos()</li>
+                        <li>tangente: tan()</li>
+                        <li>valor absoluto: abs()</li>
+                    </ul>
+                </p>
+        </div>
+        </div>
         <div class="box2">
-            <input placeholder='ingrese f(x):' type="text" class="form-control" id="fx">
+            <input placeholder='Ingrese f(x):' type="text" class="form-control" id="fx">
             <br>
             <button class="btn btn-success" onclick="calcular()">Calcular</button>
+           
         </div>
-        <br><br>
-        <div id="resultadoFx"></div>
-        <div id="resultadoXi"></div>
-        <div id="resultadoFinal"></div>
+        <hr><br>
+        <div class="box3"> 
+            <div id="resultadoFx" class="resultadofx"></div>
+            <div id="resultadoXi" class="resultadoxi"></div>
+            
+        </div>
+        <div id="resultadoFinal" class="resultadofinal"></div>
+       
     </div>
 
 
