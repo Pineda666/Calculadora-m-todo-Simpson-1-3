@@ -8,30 +8,6 @@ function calcularH() {
     return h;
 }
 
-/*
-valores = [];
-
-function ingresarValoresFuncion() {
-    i = 0;
-    do {
-        var valor_de_funcion = prompt("Ingrese valor de y" + "(" + i + ")"
-            + "\n" + "No ingrese ningún valor para salir");
-        if (valor_de_funcion == "") {
-            break;
-        } else {
-            valores.push(valor_de_funcion);
-            i++;
-        }
-    } while (valor_de_funcion != "")
-
-    var msg = "";
-
-    for (i = 0; i < valores.length; i++) {
-        msg += "Y(" + i + ")" + ": " + valores[i] + "\n";
-    }
-}
-*/
-
 function mostrarFuncionNormal() {
     let valoresfx = [];
     let valorDeH = parseFloat(calcularH());
@@ -183,12 +159,12 @@ function imprimirResultadoFinal() {
 function imprimirFx() {
     let funcionNormal = mostrarFuncionNormal();
     let valoresFx = calcularFx();
-    let resultado = document.getElementById('resultadoFx');
+    let resultado = document.getElementById('resultadoXi');
     resultado.innerHTML = '';
 
     for (let i = 0; i < valoresFx.length; i++) {
         let datoParrafo = document.createElement('p');
-        datoParrafo.innerText = 'f(' + i + ') = ' + funcionNormal[i] + ' = ' + valoresFx[i];
+        datoParrafo.innerText = 'Y'+i+' = ' +valoresFx[i];
 
         resultado.appendChild(datoParrafo);
     }
@@ -196,7 +172,7 @@ function imprimirFx() {
 
 
 function imprimirXi(){
-    let resultado = document.getElementById('resultadoXi');
+    let resultado = document.getElementById('resultadoFx');
     resultado.innerHTML = '';
     let h = calcularH();
     let numeroIntervalos = parseInt(document.getElementById('n').value);
@@ -207,7 +183,7 @@ function imprimirXi(){
         X = limiteInferior + (i*h);
 
         let datoParrafo = document.createElement('p');
-        datoParrafo.innerText = 'X(' + i + ') = '+limiteInferior +' + ('+i+'*'+h+')= ' + X;
+        datoParrafo.innerText = 'X'+i+' = ' + X;
 
         resultado.appendChild(datoParrafo);
     }
