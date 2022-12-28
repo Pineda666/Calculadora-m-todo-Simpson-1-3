@@ -1,41 +1,37 @@
-body{
+body {
     background: #d0f1eb;
 }
 
-.container{
+.container {
     margin-top: 140px;
     max-width: 900px;
-    border-radius: 2em;   
+    border-radius: 2em;
     border: 3px solid #acc9c3;
     background-color: aliceblue;
-    
-    
+
+
 }
-.box2{
+
+.box2 {
     text-align: center;
 }
-h1{
-    color:rgb(51, 206, 20);
+
+h1 {
+    color: rgb(51, 206, 20);
     margin-top: 10px;
     text-align: center;
     font-size: 23px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.resultadofinal{
-     color: rgb(170, 41, 41);
-     text-align: center;
-     font-size: 1.5em;
-     font-family: 'Times New Roman', Times, serif;
-}
-.resultadoxi{
-    margin-left: 9%;
-    color: #000;
-    display: inline-block;
-    /*border: 3px solid red;*/
+.resultadofinal {
+    color: rgb(170, 41, 41);
+    text-align: center;
+    font-size: 1.5em;
     font-family: 'Times New Roman', Times, serif;
 }
-.resultadofx{
+
+.resultadoxi {
     margin-left: 10px;
     color: #000;
     display: inline-block;
@@ -43,19 +39,28 @@ h1{
     font-family: 'Times New Roman', Times, serif;
 }
 
-input{
-   margin-top: 10px;
+.resultadofx {
+    margin-left: 9%;
+    color: #000;
+    display: inline-block;
+    /*border: 3px solid red;*/
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.datos1{
+input {
+    margin-top: 10px;
+}
+
+.datos1 {
     margin-top: 28px;
     margin-left: 5%;
     /*border: 3px solid black;*/
     width: 400px;
     display: inline-block;
-   
+
 }
-.datos2{
+
+.datos2 {
     /*border: 3px solid black;*/
     margin-top: 30px;
     margin-right: 50px;
@@ -67,8 +72,8 @@ input{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow: hidden;
 }
-.dat{
+
+.dat {
     /*border: 3px solid black;*/
     display: flex;
 }
-

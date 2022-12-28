@@ -21,40 +21,41 @@
         <h1>Método Simpson 1/3 compuesto</h1>
         <div class="dat">
             <div class="datos1">
-            <input placeholder='Ingrese el límite inferior "a"' type="text" class="form-control" id="a">
-            <input placeholder='Ingrese el límite superior "b"' type="text" class="form-control" id="b">
-            <input placeholder='Ingrese el número de subintervalos "N"' type="text" class="form-control" id="n">
-        </div>
-        <div class="datos2">
+                <input placeholder='Ingrese el límite inferior "a"' type="text" class="form-control" id="a">
+                <input placeholder='Ingrese el límite superior "b"' type="text" class="form-control" id="b">
+                <input placeholder='Ingrese el número de subintervalos "N"' type="text" class="form-control" id="n">
+            </div>
+            <div class="datos2">
                 <h6>Instrucciones:</h6>
                 <p>
-                    <ul>
-                        <li>raíz cuadrada: sq()</li>
-                        <li>exponente: ^(x,2)</li>
-                        <li>logaritmo: log()</li>
-                        <li>coseno: cos()</li>
-                        <li>seno: sen()</li>
-                        <li>arco coseno: acos()</li>
-                        <li>tangente: tan()</li>
-                        <li>valor absoluto: abs()</li>
-                    </ul>
+                <ul>
+                    <li>raíz cuadrada: sq()</li>
+                    <li>exponente: ^(x,2)</li>
+                    <li>logaritmo: log()</li>
+                    <li>coseno: cos()</li>
+                    <li>seno: sen()</li>
+                    <li>tangente: tan()</li>
+                    <li>valor absoluto: abs()</li>
+                    <li>euler: e</li>
+                </ul>
                 </p>
-        </div>
+            </div>
         </div>
         <div class="box2">
             <input placeholder='Ingrese f(x):' type="text" class="form-control" id="fx">
             <br>
             <button class="btn btn-success" onclick="calcular()">Calcular</button>
-           
+
         </div>
         <hr><br>
-        <div class="box3"> 
+        <div class="box3">            
+            <div id="resultadoXi" class="resultadoxi"></div>            
             <div id="resultadoFx" class="resultadofx"></div>
-            <div id="resultadoXi" class="resultadoxi"></div>
-            
-        </div>
-        <div id="resultadoFinal" class="resultadofinal"></div>
-       
+
+            <div id="resultadoFinal" class="resultadofinal"></div>
+
+        </div>        
+
     </div>
 
 

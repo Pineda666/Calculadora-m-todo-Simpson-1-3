@@ -44,6 +44,9 @@ function reescribirFuncion() {
             case '^'://reconocer exponente
                 fx[i] = 'Math.pow';
                 break;
+            case 'e'://reconocer exponente
+                fx[i] = 'Math.E';
+                break;
             case 's':
                 if (fx[i + 1] == 'e' && fx[i + 2] == 'n') {//reconocer seno
                     fx[i] = 'Math.sin';
@@ -159,28 +162,28 @@ function imprimirResultadoFinal() {
 function imprimirFx() {
     let funcionNormal = mostrarFuncionNormal();
     let valoresFx = calcularFx();
-    let resultado = document.getElementById('resultadoXi');
+    let resultado = document.getElementById('resultadoFx');
     resultado.innerHTML = '';
 
     for (let i = 0; i < valoresFx.length; i++) {
         let datoParrafo = document.createElement('p');
-        datoParrafo.innerText = 'Y'+i+' = ' +valoresFx[i];
+        datoParrafo.innerText = 'Y'+i+' = ' + valoresFx[i];
 
         resultado.appendChild(datoParrafo);
     }
 }
 
 
-function imprimirXi(){
-    let resultado = document.getElementById('resultadoFx');
+function imprimirXi() {
+    let resultado = document.getElementById('resultadoXi');
     resultado.innerHTML = '';
     let h = calcularH();
     let numeroIntervalos = parseInt(document.getElementById('n').value);
     let limiteInferior = parseFloat(document.getElementById('a').value);
     let X;
 
-    for(let i=0; i <= numeroIntervalos; i++){
-        X = limiteInferior + (i*h);
+    for (let i = 0; i <= numeroIntervalos; i++) {
+        X = limiteInferior + (i * h);
 
         let datoParrafo = document.createElement('p');
         datoParrafo.innerText = 'X'+i+' = ' + X;
@@ -189,7 +192,7 @@ function imprimirXi(){
     }
 }
 
-function calcular(){
+function calcular() {
     imprimirResultadoFinal();
     imprimirFx();
     imprimirXi();
